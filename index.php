@@ -11,7 +11,7 @@ $albums = getAlbums();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Albums Store</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   
   <style>
     .album-card {
@@ -33,20 +33,20 @@ $albums = getAlbums();
   </nav>
 
  <?php foreach ($albums as $album) { ?>
-  '<div class="container mt-4">
-    <h1 class="mb-4 text-center">Album</h1>
-
-   
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-     
+  <div class="container mt-4">
+    <!-- <h1 class="mb-4 text-center"><?php echo $album['titolo'];?></h1> -->
       <div class="col mb-4">
         <div class="card album-card">
-          <img src="" class="card-img-top" alt="Album 1">
+          
           <div class="card-body">
-            <h5 class="card-title"></h5>
+            <h3 class="card-title"><?php echo $album['titolo'];?></h3>
+            <img src="" class="card-img-top" alt="<?php echo $album['titolo'];?>">
+            <h5><?php echo $album['artista'];?></h5>
+            <h5><?php echo $album['anno'];?></h5>
+            <h5><?php echo $album['genere'];?></h5>
           </div>
         </div>
-      </div>';
+      </div>
  <?php }
   
 
