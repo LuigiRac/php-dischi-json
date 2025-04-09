@@ -1,16 +1,7 @@
 <?php
-$album_text = file_get_contents('./album.json');
-// var_dump($album_text);
+require_once './function.php';
 
-$albums = json_decode($album_text);
-// var_dump($albums);
-
-
-
-
-
-
-
+$albums = getAlbums();
 ?>
 
 
@@ -19,7 +10,7 @@ $albums = json_decode($album_text);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Store Spotify - Bootstrap</title>
+  <title>Albums Store</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <style>
@@ -41,8 +32,8 @@ $albums = json_decode($album_text);
     <a class="navbar-brand" href="#">PHP-DISCHI</a>
   </nav>
 
- 
-  <div class="container mt-4">
+ <?php foreach ($albums as $album) { ?>
+  '<div class="container mt-4">
     <h1 class="mb-4 text-center">Album</h1>
 
    
@@ -50,13 +41,16 @@ $albums = json_decode($album_text);
      
       <div class="col mb-4">
         <div class="card album-card">
-          <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Album 1">
+          <img src="" class="card-img-top" alt="Album 1">
           <div class="card-body">
-            <h5 class="card-title">Album 1</h5>
+            <h5 class="card-title"></h5>
           </div>
         </div>
-      </div>
+      </div>';
+ <?php }
+  
 
+?>
 
 </body>
 </html>
