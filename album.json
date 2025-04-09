@@ -1,0 +1,44 @@
+[
+    {
+        "titolo": "Abbey Road",
+        "artista": "The Beatles",
+        "url_cover": "",
+        "anno": 1969,
+        "genere": "Rock"
+    },
+    {
+        "titolo": "The Dark Side of the Moon",
+        "artista": "Pink Floyd",
+        "url_cover": "",
+        "anno": 1973,
+        "genere": "Progressive Rock"
+    },
+    {
+        "titolo": "Back in Black",
+        "artista": "AC/DC",
+        "url_cover": "",
+        "anno": 1980,
+        "genere": "Hard Rock"
+    },
+    {
+        "titolo": "Thriller",
+        "artista": "Michael Jackson",
+        "url_cover": "",
+        "anno": 1982,
+        "genere": "Pop"
+    },
+    {
+        "titolo": "Born to Run",
+        "artista": "Bruce Springsteen",
+        "url_cover": "",
+        "anno": 1975,
+        "genere": "Rock"
+    },
+    {
+        "titolo": "Hotel California",
+        "artista": "Eagles",
+        "url_cover": "",
+        "anno": 1976,
+        "genere": "Rock"
+    }
+]
