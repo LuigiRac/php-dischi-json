@@ -1,3 +1,19 @@
+<?php
+$album_text = file_get_contents('./album.json');
+// var_dump($album_text);
+
+$albums = json_decode($album_text);
+// var_dump($albums);
+
+
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
