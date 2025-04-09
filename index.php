@@ -32,25 +32,22 @@ $albums = getAlbums();
     <a class="navbar-brand" href="#">PHP-DISCHI</a>
   </nav>
 
- <?php foreach ($albums as $album) { ?>
-  <div class="container mt-4">
-    <!-- <h1 class="mb-4 text-center"><?php echo $album['titolo'];?></h1> -->
-      <div class="col mb-4">
-        <div class="card album-card">
-          
-          <div class="card-body">
-            <h3 class="card-title"><?php echo $album['titolo'];?></h3>
-            <img src="" class="card-img-top" alt="<?php echo $album['titolo'];?>">
-            <h5><?php echo $album['artista'];?></h5>
-            <h5><?php echo $album['anno'];?></h5>
-            <h5><?php echo $album['genere'];?></h5>
-          </div>
-        </div>
-      </div>
- <?php }
-  
+  <div class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <?php foreach ($albums as $album) { ?>
 
-?>
+            <div class=" col">
+                <div class="card m-1 p-2 rounded-3 shadow-lg">
+                    <h3 class="card-title"><?php echo $album['titolo'];?></h3>
+                    <img src="<?php echo $album['url_cover'];?>" class="card-img-top" alt="<?php echo $album['titolo'];?>">
+                    <h5><?php echo $album['artista'];?></h5>
+                    <h5><?php echo $album['anno'];?></h5>
+                    <h5><?php echo $album['genere'];?></h5>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
+</div>
 
 </body>
 </html>
