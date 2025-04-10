@@ -43,12 +43,32 @@ $albums = getAlbums();
 
     <form class="container" action="server.php" method ="POST">
               <div class="form-control">
-                <input type="text" id="new-album" name="new-album">
-
-                <button>Aggiungi album</button>
+                <input type="text" id="titolo" name="titolo" placeholder="titolo" value="titolo" required>
+                <label for="titolo"></label>
               </div>
-          
+
+              <div class="form-control">
+                <input type="text" id="artista" name="artista" placeholder="artista" value="artista" required>
+                <label for="artista"></label>
+              </div>
+
+              <div class="form-control">
+                <input type="text" id="url_cover" name="url_cover" placeholder="url cover" value="url_cover" required>
+                <label for="url_cover"></label>
+              </div>
+
+              <div class="form-control">
+                <input type="text" id="anno" name="anno" placeholder="anno di rilascio" value="anno" required>
+                <label for="anno"></label>
+              </div>
+
+              <div class="form-control">
+                <input type="text" id="genere" name="genere" placeholder="genere" value="genere" required>
+                <label for="genere"></label>
+              </div>
+ 
     </form>
+    <button type="submit">Aggiungi album</button>
 </div>
 
 </body>
