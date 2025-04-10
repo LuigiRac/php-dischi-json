@@ -1,5 +1,6 @@
 <?php
 require_once './function.php';
+require_once './server.php';
 
 $albums = getAlbums();
 ?>
@@ -41,7 +42,7 @@ $albums = getAlbums();
     </div>
 
 
-    <form class="container" action="server.php" method ="POST">
+    <form class="container form-control" action="server.php" method ="POST">
               <div class="form-control">
                 <input type="text" id="titolo" name="titolo" placeholder="titolo" value="titolo" required>
                 <label for="titolo"></label>
@@ -66,9 +67,9 @@ $albums = getAlbums();
                 <input type="text" id="genere" name="genere" placeholder="genere" value="genere" required>
                 <label for="genere"></label>
               </div>
- 
+              <button type="submit">Aggiungi album</button>
     </form>
-    <button type="submit">Aggiungi album</button>
+    
 </div>
 
 </body>
