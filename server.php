@@ -13,3 +13,7 @@ $album[] = [
     'anno' => $anno,
     'genere' => $genere
 ];
+
+
+$album_update = json_encode($album);
+// var_dump($album);
